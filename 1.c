@@ -5,14 +5,14 @@ int main() {
     int size;
     printf("Enter the size of the array: \n");
     scanf("%d ", &size);
-    
+    printf("Enter the elements: \n");
     int arr[size];
     for (int i = 0; size<i; i++) {
         scanf("%d ", &arr[i]);
     }
-    printf("Enter the elements: \n");
-
     
+
+
     int seize = sizeof(arr)/sizeof(int) ;
     printf("this is seize: %d ", seize);
 }
