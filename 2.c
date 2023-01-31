@@ -1,5 +1,6 @@
 /*Write a function in C to find the sum of all array elements.*/
 #include <stdio.h>
+int findSum(int arr[], int size);
 
 int main() {
     int size = 0;
@@ -11,6 +12,13 @@ int main() {
     for(int i = 0; i < size; i++) {
         scanf("%d", &arr[i]);
     }
+    printf("%d\n", findSum(arr[size], size));
+}
 
-    for(int j = 0; j<size; )
+int findSum(int arr[], int size) {
+    int sum = 0;
+    for(int j = 0; j<size; j++) {
+        sum += arr[j];
+    }
+    return sum;
 }
