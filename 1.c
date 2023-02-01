@@ -15,3 +15,15 @@ int main() {
         printf("%d ", arr[size-1-i]);
     }
 }
+
+// int main() {                                         //MALLOC USAGE
+//     printf("Enter the size of the array:\t");
+//     int size;
+//     scanf("%d", &size);
+//     printf("Enter the elements of the array:\n");
+//     double *arr = (double *) malloc(size*sizeof(double)); 
+//     for(int i=0; i<size; i++) 
+//     {
+//         scanf("%lf", &arr[i]);
+//     }
+// }
