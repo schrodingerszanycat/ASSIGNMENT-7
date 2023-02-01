@@ -14,7 +14,7 @@ int freq(int *a, int n) {
                 visit[j] = -1;
             }
         }
-    printf("The frequency of %d is %d.\n", a[i], count);
+        printf("The frequency of %d is %d.\n", a[i], count);
     }
 }
 
