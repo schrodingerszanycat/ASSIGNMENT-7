@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int freq(int *a, int n) {
+int freq(int *a, int n) {                                       
     int visit[n];
     for (int i = 0; i<n; i++) {
         if (visit[i] == -1)
