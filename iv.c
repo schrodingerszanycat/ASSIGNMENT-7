@@ -3,7 +3,8 @@
 #include <stdio.h>
 
 int toDisplay(int ab[], int n) {
-    for (int i = 0; i<n; i++) {
+    int i;
+    for (i = 0; i<n; i++) {
         printf("%d ", ab[i]);
     }
 }
