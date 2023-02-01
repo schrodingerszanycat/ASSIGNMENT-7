@@ -24,6 +24,7 @@ int main() {
     scanf("%d", &size);
     int arr[size];
     int* p = (int *) malloc(size*sizeof(int));
+    printf("Enter the elements: ");
     for (int j = 0; j<size; j++) 
         scanf("%d", &arr[j]);
 
