@@ -8,15 +8,10 @@ order.*/
 int merge_array(int *a, int *b, int size);
 
 int main() {
-  int size = 0;
-  printf("Enter size of the 2 arrays: ");
-  scanf("%d", &size);
-  int a[size], b[size];
-  int *p = (int *) malloc(size*sizeof(int));
-  int *q = (int *) malloc(size*sizeof(int));
-  printf("Enter elements of the two arrays in their descending order: ");
-  for (int i = 0; i<size; i++) scanf("%d", &a[i]);
-  for (int j = 0; j<size; j++) scanf("%d", &b[j]);
+  int size = 6;
+  
+  int a[size] = {10, 9, 8, 1, 1, 1};
+  int b[size] = {76, 5, 4, 3, 2};
   toMerge(a, b, size);
   printf("\n");
 
