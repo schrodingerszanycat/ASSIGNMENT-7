@@ -10,8 +10,8 @@ int merge_array(int *a, int *b, int size);
 int main() {
   int size = 6;
   
-  int a[size] = {10, 9, 8, 1, 1, 1};
-  int b[size] = {76, 5, 4, 3, 2};
+  int a[6] = {10, 9, 8, 1, 1, 1};
+  int b[6] = {76, 6, 5, 4, 3, 2};
   toMerge(a, b, size);
   printf("\n");
 
@@ -29,7 +29,7 @@ int toMerge(int *a, int *b, int size) {
   int *r = (int *) malloc(2*size*sizeof(int));
   int merged[2*size];
 
-  int i1 = 0, i2 = 0;
+  int i1 = 0, i2 = 0; // Indices
   for (int i = 0; i<2*size; i++) {
     if (i1 < size && i2 < size){
         if (a[i1] > b[i2]) {
@@ -51,7 +51,7 @@ int toMerge(int *a, int *b, int size) {
     }
 
   }
-  for (int k = 0; k<2*size; k++)
+  for (int k = 0; k<(2*size); k++)
     printf("%d ", merged[k]);
 }
 
