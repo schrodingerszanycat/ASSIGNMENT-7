@@ -12,7 +12,7 @@ int main() {
   
   int a[6] = {10, 9, 8, 1, 1, 1};
   int b[6] = {76, 6, 5, 4, 3, 2};
-  toMerge(a, b, size);
+  int toMerge(a, b, size);
   printf("\n");
 
 // toPrint(a, b, size);
