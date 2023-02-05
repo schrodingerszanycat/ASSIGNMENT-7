@@ -19,9 +19,9 @@ int main() {
 int toSeparate(int *a, int size) {
     int count = 0; // Of odd integers
     for (int i = 0; i<size; i++)
-        if (a[i] % 2) count++;
+        if (a[i] % 2 !=0 ) count++;
     
-    int odd_array[count]; int even_array[size-count];
+    int odd_array[count]; int even_array[(size-count)];
 
     int i1 = 0, i2 = 0; // For odd and even arrays respectively
     for (int j = 0; j<size; j++) {
@@ -32,7 +32,9 @@ int toSeparate(int *a, int size) {
             even_array[i2++] = a[j];
     }
     for (int p = 0; p<size; p++) printf("%d ", odd_array[p]);
-    for (int q = 0; q<size-count; q++) printf("%d ", evem_array[q]);
+    printf("\n");
+    for (int q = 0; q<(size-count); q++) printf("%d ", even_array[q]);
+    printf("\n");
 
 
 }
