@@ -24,7 +24,8 @@ int addMat(int a[3][3], int b[3][3]) {
     }
     for (int p = 0; p<3; p++) {
         for (int q = 0; q<3; q++) {
-            printf("%d ", c[p][q]);
+            printf("%d ", c[p][q]);            
         }
+        printf("\n");
     }
 }
