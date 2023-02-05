@@ -3,18 +3,19 @@ considering it a list.*/
 #include <stdio.h>
 
 int del_ele(int *arr, int size, int n) {
-    int p, pos = 0;
+    int pos = 0;
     for (int i = 0; i<size; i++) {  // To check if element exists
-        if (arr[p] == n)
-            pos = p;
-            printf("this is the value of pos %d\n", pos);
-    }
-    int mod_array[size-1];
+        if (arr[i] == n)
+            pos = i;
+        }         
     for (int j = pos; j < size-1; j++) 
-        mod_array[j] = arr[j+1];
-    
+        arr[j] = arr[j+1];
+
     printf("Modified array: ");
-    for (int k = 0; k<size-1; k++) printf("%d ", arr[k]);
+    for (int k = 0; k<size-1; k++) 
+        printf("%d ", arr[k]);
+    printf("\n");    
+    
 }
 
 int main() {
@@ -30,9 +31,11 @@ int main() {
     scanf("%d", &elmt);
 
     printf("Original array: ");
-    for (int i = 0; i<size; i++) printf("%d ", arr[i]);
-    
+    for (int i = 0; i<size; i++) 
+        printf("%d ", arr[i]);    
+    printf("\n");
 
     del_ele(arr, size, elmt);
+    
 }
 
