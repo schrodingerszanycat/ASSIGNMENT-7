@@ -1,4 +1,4 @@
-/*Write a program in C to find the minimum element in an array.*/
+/*Write a function in C to find the second largest element in an array.*/
 #include <stdio.h>
 
 int main() {
