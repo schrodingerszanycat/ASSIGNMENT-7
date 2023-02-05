@@ -18,26 +18,20 @@ int main() {
 
 int toSeparate(int *a, int size) {
     int count = 0; // Of odd integers
-    for (int i = 0; i<size; i++) {
-        if (a[i] % 2 != 0 ) 
-            count++;
-    }
-        
+    for (int i = 0; i<size; i++) if (a[i] % 2 != 0 ) count++;
     
     int odd_array[count]; int even_array[(size-count)];
 
     int i1 = 0, i2 = 0; // For odd and even arrays respectively
     for (int j = 0; j<size; j++) {
-        if (a[j] % 2) {
+        if (a[j] % 2)  
             odd_array[i1++] = a[j];
-        }
-        else 
+        
+        else  
             even_array[i2++] = a[j];
     }
-    for (int p = 0; p<size; p++) printf("%d ", odd_array[p]);
+    for (int p = 0; p<count; p++) printf("%d ", odd_array[p]);
     printf("\n");
     for (int q = 0; q<(size-count); q++) printf("%d ", even_array[q]);
     printf("\n");
-
-
 }
