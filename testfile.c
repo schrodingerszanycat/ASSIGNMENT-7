@@ -1,20 +1,31 @@
-/*Write a program in C to find the minimum element in an array.*/
+/*Write a function in C for the multiplication of two matrices.*/
 #include <stdio.h>
 
-int main() {
-    int size = 0;
-    printf("Enter the size of the array: ");
-    scanf("%d", &size);
+int addMat(int a[][3], int b[][3]) {
+    int c[3][3];
+    for (int i = 0; i<3; i++) {
+        for (int j = 0; j<3; j++) {
+            c[i][j] = 0;
 
-    int arr[size];
-    printf("Enter all the elements: ");
-    for (int i = 0; i<size; i++) {
-        scanf("%d", &arr[i]);
+            for (int k = 0; k<3; k++) {
+                c[i][j] += a[i][k] * b[k][j];
+            }
+        }
     }
-    int sec_max = arr[0];
-    for (int j = 1; j<size; j++) {
-        if (sec_max < arr[j]) sec_max = arr[j-1];
-        else continue;
+    for (int p = 0; p<3; p++) {
+        for (int q = 0; q<3; q++) {
+            printf("%d ", c[p][q]);            
+        }
+        printf("\n");
     }
-    printf("%d\n", sec_max);
+}
+
+int main() {
+    int a[3][3] = {{2,1,1},
+                   {1,1,1}, 
+                   {1,1,1}};
+    int b[3][3] = {{1,1,1},
+                   {1,1,1},
+                   {1,1,1}};
+    addMat(a, b);
 }
