@@ -18,8 +18,11 @@ int main() {
 
 int toSeparate(int *a, int size) {
     int count = 0; // Of odd integers
-    for (int i = 0; i<size; i++)
-        if (a[i] % 2 !=0 ) count++;
+    for (int i = 0; i<size; i++) {
+        if (a[i] % 2 != 0 ) 
+            count++;
+    }
+        
     
     int odd_array[count]; int even_array[(size-count)];
 
