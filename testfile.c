@@ -10,18 +10,14 @@ int addMat(int a[][3], int b[][3]) {
             for (int k = 0; k<3; k++) {
                 c[i][j] += a[i][k] * b[k][j];
             }
-        }
-    }
-    for (int p = 0; p<3; p++) {
-        for (int q = 0; q<3; q++) {
-            printf("%d ", c[p][q]);            
+            printf("%d ", c[i][j]);
         }
         printf("\n");
     }
 }
 
 int main() {
-    int a[3][3] = {{2,1,1},
+    int a[3][3] = {{1,1,1},
                    {1,1,1}, 
                    {1,1,1}};
     int b[3][3] = {{1,1,1},
