@@ -2,10 +2,11 @@
 modified array needs to be sorted.*/
 #include <stdio.h>
 
-int new_val(int *arr, int size, int ele) {
-    arr[size] = ele;
 
-    
+
+
+int new_val(int *arr, int size, int ele) {
+    arr[size] = ele;  
     
     printf("Modified array is: ");
     for (int k = 0; k<size+1; k++) printf("%d ", arr[k]);
