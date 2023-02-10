@@ -26,3 +26,6 @@ void main() {
 }
 // gcc -s code.c
 // function pointerssss.
+// learn free() usage
+// danian pointer??
+// p = NULL
